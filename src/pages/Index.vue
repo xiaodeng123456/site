@@ -37,7 +37,7 @@
         <el-aside width="300px" style="background-color: #1d2938; text-align: left; font-size: 12px;">
           <el-menu :default-active="selectIndex" router background-color="#1d2938" text-color="#85919e"
             active-text-color="#3378fc" @select="handleSelect" @open="handleOpen" @close="handleClose">
-            <el-menu-item index="1" class="single-m">
+            <el-menu-item index="home" class="single-m">
               <i class="el-icon-menu"></i>
               <span slot="title">首页</span>
             </el-menu-item>
@@ -46,8 +46,8 @@
               <template slot="title"><i class="el-icon-setting"></i>空包购买</template>
               <el-menu-item-group>
                 <template slot="title">独享空包</template>
-                <el-menu-item index="/user">立刻购买</el-menu-item>
-                <el-menu-item index="1-2">购买记录</el-menu-item>
+                <el-menu-item index="user">立刻购买</el-menu-item>
+                <el-menu-item index="table">购买记录</el-menu-item>
               </el-menu-item-group>
               <el-menu-item-group>
                 <template slot="title">空闲空包</template>

@@ -4,16 +4,23 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 import User from './user';
+import Home from './home';
 
 const index_routes = [].concat(
-  User
+  User,Home
 )
 
 const $router = new Router({
-  routes: [{
-      path: '/',
+  routes: [
+    {
+      path: '',
+      redirect: 'index'
+    },
+    {
+      path: '/index',
       component: (resolve) => require(['@/pages/Index.vue'], resolve),
       children: index_routes,
+      redirect: '/index/home',
       meta: {
         title: '礼品联盟'
       }

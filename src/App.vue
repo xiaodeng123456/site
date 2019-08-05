@@ -19,6 +19,8 @@
 
   body,
   html {
+    margin:0;
+    padding:0;
     height: 100%;
   }
 
@@ -27,7 +29,7 @@
     font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    /* text-align: center; */
   }
 
 </style>
